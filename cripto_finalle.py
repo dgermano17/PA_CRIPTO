@@ -10,9 +10,8 @@ for i in range(len(palavra)):
         if palavra[i] == letras[i2]:
             i2 = i2 + chave
 
-            if i2 > len(letras):
+            if i2 >= len(letras):
                 i2 = i2 - 26
 
-            
             print(letras[i2])
 
