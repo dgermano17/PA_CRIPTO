@@ -8,7 +8,7 @@ chave = int(input("Digite uma chave: "))
 for i in range(len(palavra)):
     for i2 in range(len(letras)):
         if palavra[i] == letras[i2]:
-            i2 = i2 + chave
+            i2 = i2 - chave
 
             while i2 >= len(letras):
                 i2 = i2 - 26
@@ -17,7 +17,3 @@ for i in range(len(palavra)):
                 i2 = i2 + 26
 
             print(letras[i2])
-
-            i2 = 0
-
-            
